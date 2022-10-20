@@ -114,15 +114,6 @@ repositories {
     }
 
     maven {
-        url "http://tehnut.info/maven"
-    }
-
-    // url of the maven that hosts Enchiridions files
-    maven {
-        url "http://girafi.dk/maven/"
-    }
-
-    maven {
         name = "Jared"
         url = "http://maven.blamejared.com/"
     }
@@ -139,8 +130,6 @@ dependencies {
     // compile ic2Version
     compile jeiVersion
     deobfCompile cclibVersion
-    compile wailaVersion
-    deobfCompile enchiridionVersion
     compile craftTweaker2APIVersion
     compile craftTweaker2Version
     compile baublesVersion
@@ -151,8 +140,6 @@ dependencies {
     // Avoiding using the generic "lib".
     compile fileTree(dir: 'eilib', include: '*.jar')
 
-    testCompile sourceSets.api.getOutput()
-    testCompile 'junit:junit:4.12'
 }
 
 processResources {
